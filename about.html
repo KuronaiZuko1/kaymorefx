@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Us - Top Deal E-Commerce">
+    <title>Top Deal E-Commerce - About Us</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file -->
+</head>
+<style>
+nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            float: left;
+            position: relative;
+        }
+        nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+        /* Dropdown container styling */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        /* Show the dropdown menu on hover */
+        nav ul li:hover .dropdown-content {
+            display: block;
+        }
+</style>
+<body>
+    <!-- Header section -->
+    <header>
+        <div class="logo">KaymoreFx web</div>
+        <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li>
+                <a href="#services">Services</a>
+                <div class="dropdown-content">
+                    <a href="#service1">Service 1</a>
+                    <a href="#service2">Service 2</a>
+                    <a href="#service3">Service 3</a>
+                </div>
+            </li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+        <div class="cart">
+            <a href="#cart">My Cart (0) - $0.00</a>
+        </div>
+    </header>
+
+    <!-- About Us Section -->
+    <section class="about">
+        <h2>About Us</h2>
+        <p>Welcome to TopDeal, your number one source for all things shopping. We're dedicated to providing you the very best products, with an emphasis on dependability, customer service, and uniqueness.</p>
+        <br>
+        <p>Founded in 2023, TopDeal has come a long way from its beginnings. When we first started out, our passion for providing the best products drove us to do tons of research, and gave us the impetus to turn hard work and inspiration into a booming online store.</p>
+        <br>
+        <p>We now serve customers all over the world, and are thrilled to be a part of the quirky, eco-friendly, fair trade wing of the e-commerce industry.</p>
+    </section>
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2023 Top Deal E-Commerce. All rights reserved.</p>
+    </footer>
+</body>
+</html>
