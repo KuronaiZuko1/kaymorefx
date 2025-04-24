@@ -1,80 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="An example e-commerce website template">
-    <title>Simple E-Commerce Website</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Toggle Sidebar</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<style>
-
-</style>
 <body>
-    <!-- Header section -->
-    <header>
-        <h1>Kaymore Fx web</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <div class="top-bar">
+      <div class="menu-icon" id="menu-icon">&#9776;</div>
+      <div class="top-logo">
+        <img src="https://i.ibb.co/TMzM5nDd/IMG-20250408-WA0044.jpg" alt="IMG-20250408-WA0044" border="0"></a>
+      </div>
+      <div class="cart-icon">
+        <i class="fas fa-shopping-cart"></i>
+      </div>
+    <!-- Mini Cart Popup -->
+<div class="mini-cart" id="mini-cart">
+  <div class="mini-cart-header">
+    <span>My Cart</span>
+    <span class="close-mini-cart" id="close-mini-cart">&times;</span>
+  </div>
+  <div class="mini-cart-body">
+    <p>Your cart is empty</p>
+    <!-- You can dynamically add cart items here later -->
+  </div>
+</div>
+    </div>
+  <div class="sidebar" id="sidebar">
+    <div class="close-icon" id="close-icon">&times;</div>
+    <div class="logo">
+  <img src="https://i.ibb.co/TMzM5nDd/IMG-20250408-WA0044.jpg" alt="IMG-20250408-WA0044" border="0"></a>
+</div>
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Services</li>
+      <li>Contact</li>
+    </ul>
+  </div>
+  </header>
 
-    <!-- Main content section -->
-    <main>
-        <!-- Featured Products Section -->
-        <section id="products">
-            <h2>Featured Products</h2>
-            <div class="product-list">
-                <article class="product-item">
-                    <img src="IMG-20250406-WA0003.jpg" alt="Description of Product 1" class="product-image">
-                    <h3>Ind Scalper V1</h3>
-                    <p class="price">$19.99</p>
-                    <button>Add to Cart</button>
-                </article>
-                <article class="product-item">
-                    <img src="IMG-20250404-WA0013.jpg" alt="Description of Product 2" class="product-image">
-                    <h3>Event Chopper</h3>
-                    <p class="price">$29.99</p>
-                    <button>Add to Cart</button>
-                </article>
-                <article class="product-item">
-                    <img src="IMG-20250404-WA0000.jpg" alt="Description of Product 3" class="product-image">
-                    <h3>Product 3</h3>
-                    <p class="price">$39.99</p>
-                    <button>Add to Cart</button>
-                </article>
-                <!-- More products can be added here -->
-            </div>
-        </section>
-    </main>
-    <!-- Footer section -->
-    <footer>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>Welcome to our store, where we offer the best products at unbeatable prices.</p>
-        </section>
-        
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <form action="submit_form.php" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
-        <p>&copy; 2023 My E-Commerce Store. All rights reserved.</p>
-    </footer>
+  <main>
+<!-- Example Add to Cart button -->
+<div class="product">
+  <img src="https://i.ibb.co/1YRzsPyd/IMG-20250406-WA0003.jpg" alt="IMG-20250406-WA0003" border="0"></a>
+  <p>- $10</p>
+  <button onclick="addToCart('Product 1', 10)">Add to Cart</button>
+</div>
+
+<div class="product">
+  <img src="https://i.ibb.co/1YRzsPyd/IMG-20250406-WA0003.jpg" alt="IMG-20250406-WA0003" border="10 px sold #ccc"></a>
+  <p>- $20</p>
+  <button onclick="addToCart('Product 2', 20)">Add to Cart</button>
+</div>
+
+</main>
+
+
+<footer>
+  <p>Copyrights reserved 2025@</p>
+</footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
